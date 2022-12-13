@@ -1,0 +1,293 @@
+{
+  "id": "a16b3e28-5981-43b0-a5d5-3bce6af552fe",
+  "version": "2.0",
+  "name": "Homework 25",
+  "url": "https://www.saucedemo.com/",
+  "tests": [{
+    "id": "d3560515-2d75-4966-94a3-de7c10bd9d65",
+    "name": "Verify text in goods descriprtion",
+    "commands": [{
+      "id": "3eb43074-75bb-4686-85bc-f9625a36027c",
+      "comment": "Go to the website",
+      "command": "open",
+      "target": "https://www.saucedemo.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b2a773f-8d88-47a2-af1a-e977f97436bf",
+      "comment": "Set window size",
+      "command": "setWindowSize",
+      "target": "1536x842",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c23021e8-cf4c-42cd-8873-4e853fdb5ca7",
+      "comment": "Click to the field Username",
+      "command": "click",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a1a316b-aac8-4d8e-a9d8-019968f41899",
+      "comment": "Enter username",
+      "command": "type",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "standard_user"
+    }, {
+      "id": "889c4a80-fe48-4751-a362-e52e04d836d1",
+      "comment": "Click to the field Password",
+      "command": "click",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5dc1338-11c3-48fe-a8b4-85f0913586a9",
+      "comment": "Enter password",
+      "command": "type",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "secret_sauce"
+    }, {
+      "id": "b3a498cf-4edd-47c6-b526-2ffe5bd38d3a",
+      "comment": "Login",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "786a68c4-1a2e-487f-ae01-e21f1cf908a6",
+      "comment": "Sauce Labs Backpack",
+      "command": "assertText",
+      "target": "css=.inventory_item:nth-child(1) .inventory_item_label",
+      "targets": [
+        ["css=.inventory_item:nth-child(1) .inventory_item_label", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "Sauce Labs Backpack\\ncarry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection."
+    }, {
+      "id": "8325d821-96cf-499d-b808-274cfb1e7871",
+      "comment": "Sauce Labs Bike Light",
+      "command": "assertText",
+      "target": "//*[@id=\"inventory_container\"]/div/div[2]/div[2]/div[1]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Sauce Labs Bike Light\\nA red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included."
+    }, {
+      "id": "f3fbc44d-1a02-4364-b743-67bd6ac538c1",
+      "comment": "Sauce Labs Bolt T-Shirt",
+      "command": "assertText",
+      "target": "//*[@id=\"inventory_container\"]/div/div[3]/div[2]/div[1]",
+      "targets": [],
+      "value": "Sauce Labs Bolt T-Shirt\\nGet your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt."
+    }, {
+      "id": "29160168-b250-4125-a419-c9b10d892e75",
+      "comment": "Sauce Labs Fleece Jacket",
+      "command": "assertText",
+      "target": "//*[@id=\"inventory_container\"]/div/div[4]/div[2]/div[1]",
+      "targets": [],
+      "value": "Sauce Labs Fleece Jacket\\nIt's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office."
+    }, {
+      "id": "5acc19e7-d66d-4558-a20e-8a97c733be6b",
+      "comment": "Sauce Labs Onesie",
+      "command": "assertText",
+      "target": "//*[@id=\"inventory_container\"]/div/div[5]/div[2]/div[1]",
+      "targets": [],
+      "value": "Sauce Labs Onesie\\nRib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel."
+    }, {
+      "id": "ac0f2485-7fd4-463b-8d68-4f60df0b79ff",
+      "comment": "Test.allTheThings() T-Shirt (Red)",
+      "command": "assertText",
+      "target": "//*[@id=\"inventory_container\"]/div/div[6]/div[2]/div[1]",
+      "targets": [],
+      "value": "Test.allTheThings() T-Shirt (Red)\\nThis classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton."
+    }, {
+      "id": "78938826-f86b-4600-82af-42b33b155a54",
+      "comment": "Click to burger menu",
+      "command": "click",
+      "target": "id=react-burger-menu-btn",
+      "targets": [
+        ["id=react-burger-menu-btn", "id"],
+        ["css=#react-burger-menu-btn", "css:finder"],
+        ["xpath=//button[@id='react-burger-menu-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='menu_button_container']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Open Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bffb201f-b2fb-465f-90a4-3f0e2bdb4580",
+      "comment": "Logout",
+      "command": "click",
+      "target": "id=logout_sidebar_link",
+      "targets": [
+        ["id=logout_sidebar_link", "id"],
+        ["css=#logout_sidebar_link", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//a[@id='logout_sidebar_link']", "xpath:attributes"],
+        ["xpath=//div[@id='menu_button_container']/div/div[2]/div/nav/a[3]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "77e78b11-924d-4e3f-831c-97f152537e16",
+    "name": "Verify the error for locked_out_user",
+    "commands": [{
+      "id": "d239f05e-fea6-475c-90d2-00386895d25b",
+      "comment": "Go to website",
+      "command": "open",
+      "target": "https://www.saucedemo.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3282193-7968-4d97-8af7-c9fb63d3a6cc",
+      "comment": "Set window size",
+      "command": "setWindowSize",
+      "target": "1536x842",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65cd02f4-c480-4a01-82a1-d5d75cd04a39",
+      "comment": "Click to Username",
+      "command": "click",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7ea0bd7-9fa4-4555-8def-ea1561ddc655",
+      "comment": "Enter Username",
+      "command": "type",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "locked_out_user"
+    }, {
+      "id": "8947591b-cf41-48d5-a6f5-5c25631266af",
+      "comment": "Click to the field Password",
+      "command": "click",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "350f6feb-c213-4460-a5c1-b819d2452e69",
+      "comment": "Enter Password",
+      "command": "type",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "secret_sauce"
+    }, {
+      "id": "47f26c70-1cb5-4efd-b980-5281ffa28d80",
+      "comment": "Click to Login button",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "805defe1-c6b7-48dc-a137-62c7ecde4ca7",
+      "comment": "Verify the error and the text of the error",
+      "command": "assertText",
+      "target": "//*[@id=\"login_button_container\"]/div/form/div[3]/h3",
+      "targets": [],
+      "value": "Epic sadface: Sorry, this user has been locked out."
+    }]
+  }],
+  "suites": [{
+    "id": "bbc1396b-7408-43ef-9bc9-54117f9f5cdf",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d3560515-2d75-4966-94a3-de7c10bd9d65"]
+  }],
+  "urls": ["https://www.saucedemo.com/"],
+  "plugins": []
+}
